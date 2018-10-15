@@ -32,15 +32,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
-            try
-            {
-                PlayNote note = (PlayNote)other.gameObject.GetComponent(typeof(PlayNote));
-                note.Play();
-            }
-            catch
-            {
-                print("fout");
-            }
+            PlayNote note = (PlayNote)other.gameObject.GetComponent(typeof(PlayNote));
+            note.Play();
+            GameController.Check(other.gameObject);
         }
     }
 }
