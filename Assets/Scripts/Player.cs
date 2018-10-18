@@ -30,6 +30,20 @@ public class Player : MonoBehaviour
         this.CheckForInput(other);
     }
 
+    /*
+     * Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D.
+     * The rotation can cause the collider to be out of place an thus the won't collide with the notes.
+    */
+    void OnCollisionEnter(Collision col)
+    {
+        this.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0);
+        this.GetComponent<Rigidbody>().drag = 100000;
+    }
+    void OnCollisionStay(Collision col)
+    {
+        this.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0);
+    }
+
     void CheckForInput(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
