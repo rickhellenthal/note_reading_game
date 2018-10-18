@@ -1,52 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using TMPro;
-using UnityEditor;
 using UnityEngine;
 
 
 public class GameController : MonoBehaviour {
-    private List<string> list = new List<string>();
-    private GameObject text;
-    private string noteToPlay;
-    private bool isWaiting = false;
+    private List<Note> noteList = new List<Note>();
+    private bool isWaiting;
+    private Note noteToPlay;
+    private SpriteRenderer noteToPlayImg;
 
-    // Use this for initialization
     void Start () {
-		list.Add("C_Note");
-        list.Add("Cs_Note");
-	    list.Add("D_Note");
-	    list.Add("Ds_Note");
-	    list.Add("E_Note");
-	    list.Add("F_Note");
-	    list.Add("Fs_Note");
-	    list.Add("G_Note");
-	    list.Add("Gs_Note");
-	    list.Add("A_Note");
-	    list.Add("As_Note");
-	    list.Add("B_Note");
-        list.Add("C1_Note");
+        noteList.Add(new Note("R01_C_Note", "C_Note", Resources.Load<Sprite>("Images/Notes/R01_C_Note")));
+        noteList.Add(new Note("R02_D_Note", "D_Note", Resources.Load<Sprite>("Images/Notes/R02_D_Note")));
+        noteList.Add(new Note("R03_E_Note", "E_Note", Resources.Load<Sprite>("Images/Notes/R03_E_Note")));
+        noteList.Add(new Note("R04_F_Note", "F_Note", Resources.Load<Sprite>("Images/Notes/R04_F_Note")));
+        noteList.Add(new Note("R05_G_Note", "G_Note", Resources.Load<Sprite>("Images/Notes/R05_G_Note")));
+        noteList.Add(new Note("R06_A_Note", "A_Note", Resources.Load<Sprite>("Images/Notes/R06_A_Note")));
+        noteList.Add(new Note("R07_B_Note", "B_Note", Resources.Load<Sprite>("Images/Notes/R07_B_Note")));
+        noteList.Add(new Note("R08_C1_Note", "C_Note", Resources.Load<Sprite>("Images/Notes/R08_C1_Note")));
+        noteList.Add(new Note("R09_D1_Note", "D_Note", Resources.Load<Sprite>("Images/Notes/R09_D1_Note")));
+        noteList.Add(new Note("R10_E1_Note", "E_Note", Resources.Load<Sprite>("Images/Notes/R10_E1_Note")));
+        noteList.Add(new Note("R11_F1_Note", "F_Note", Resources.Load<Sprite>("Images/Notes/R11_F1_Note")));
+        noteList.Add(new Note("R12_G1_Note", "G_Note", Resources.Load<Sprite>("Images/Notes/R12_G1_Note")));
+        noteList.Add(new Note("R13_A1_Note", "A_Note", Resources.Load<Sprite>("Images/Notes/R13_A1_Note")));
 
-        text = GameObject.FindGameObjectWithTag("NoteToPlay");
+        noteToPlayImg = GameObject.FindGameObjectWithTag("NoteToPlay").GetComponent<SpriteRenderer>();
         NextNote();
     }
 
     public void NextNote()
     {
-        string randomNote = list[Random.Range(0, list.Count)];
+        Note randomNote = noteList[Random.Range(0, noteList.Count)];
         noteToPlay = randomNote;
-        text.GetComponent<TextMeshPro>().text = randomNote;
+        noteToPlayImg.sprite = noteToPlay.image;
     }
 
     public void Check(GameObject notePlayed)
     {
-        GameObject noteItShouldBe = GameObject.Find(noteToPlay);
+        GameObject noteItShouldBe = GameObject.Find(noteToPlay.name);
         bool nextNote = false;
 
         if (isWaiting) { return; }
 
-        if (notePlayed.name.Equals(noteToPlay))
+        if (notePlayed.name.Equals(noteToPlay.name))
         {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
             nextNote = true;
@@ -76,5 +72,19 @@ public class GameController : MonoBehaviour {
         }
 
         isWaiting = false;
+    }
+}
+
+public class Note
+{
+    public string id { get; set; }
+    public string name { get; set; }
+    public Sprite image { get; set; }
+
+    public Note(string id, string name, Sprite image)
+    {
+        this.id = id;
+        this.name = name;
+        this.image = image;
     }
 }
