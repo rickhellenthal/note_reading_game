@@ -9,20 +9,36 @@ public class GameController : MonoBehaviour {
     private Note _noteToPlay;
     private SpriteRenderer _noteToPlayImg;
 
-    void Start () {
-        _noteList.Add(new Note("R01_C_Note", "C_Note", Resources.Load<Sprite>("Images/Notes/R01_C_Note")));
-        _noteList.Add(new Note("R02_D_Note", "D_Note", Resources.Load<Sprite>("Images/Notes/R02_D_Note")));
-        _noteList.Add(new Note("R03_E_Note", "E_Note", Resources.Load<Sprite>("Images/Notes/R03_E_Note")));
-        _noteList.Add(new Note("R04_F_Note", "F_Note", Resources.Load<Sprite>("Images/Notes/R04_F_Note")));
-        _noteList.Add(new Note("R05_G_Note", "G_Note", Resources.Load<Sprite>("Images/Notes/R05_G_Note")));
-        _noteList.Add(new Note("R06_A_Note", "A_Note", Resources.Load<Sprite>("Images/Notes/R06_A_Note")));
-        _noteList.Add(new Note("R07_B_Note", "B_Note", Resources.Load<Sprite>("Images/Notes/R07_B_Note")));
-        _noteList.Add(new Note("R08_C1_Note", "C_Note", Resources.Load<Sprite>("Images/Notes/R08_C1_Note")));
-        _noteList.Add(new Note("R09_D1_Note", "D_Note", Resources.Load<Sprite>("Images/Notes/R09_D1_Note")));
-        _noteList.Add(new Note("R10_E1_Note", "E_Note", Resources.Load<Sprite>("Images/Notes/R10_E1_Note")));
-        _noteList.Add(new Note("R11_F1_Note", "F_Note", Resources.Load<Sprite>("Images/Notes/R11_F1_Note")));
-        _noteList.Add(new Note("R12_G1_Note", "G_Note", Resources.Load<Sprite>("Images/Notes/R12_G1_Note")));
-        _noteList.Add(new Note("R13_A1_Note", "A_Note", Resources.Load<Sprite>("Images/Notes/R13_A1_Note")));
+    void Start ()
+    {
+        string path = "Images/Notes/RightHand/";
+        _noteList.Add(new Note("R01_C_Note", "C_Note", Resources.Load<Sprite>(path + "R01_C_Note")));
+        _noteList.Add(new Note("R02_D_Note", "D_Note", Resources.Load<Sprite>(path + "R02_D_Note")));
+        _noteList.Add(new Note("R03_E_Note", "E_Note", Resources.Load<Sprite>(path + "R03_E_Note")));
+        _noteList.Add(new Note("R04_F_Note", "F_Note", Resources.Load<Sprite>(path + "R04_F_Note")));
+        _noteList.Add(new Note("R05_G_Note", "G_Note", Resources.Load<Sprite>(path + "R05_G_Note")));
+        _noteList.Add(new Note("R06_A_Note", "A_Note", Resources.Load<Sprite>(path + "R06_A_Note")));
+        _noteList.Add(new Note("R07_B_Note", "B_Note", Resources.Load<Sprite>(path + "R07_B_Note")));
+        _noteList.Add(new Note("R08_C1_Note", "C_Note", Resources.Load<Sprite>(path + "R08_C1_Note")));
+        _noteList.Add(new Note("R09_D1_Note", "D_Note", Resources.Load<Sprite>(path + "R09_D1_Note")));
+        _noteList.Add(new Note("R10_E1_Note", "E_Note", Resources.Load<Sprite>(path + "R10_E1_Note")));
+        _noteList.Add(new Note("R11_F1_Note", "F_Note", Resources.Load<Sprite>(path + "R11_F1_Note")));
+        _noteList.Add(new Note("R12_G1_Note", "G_Note", Resources.Load<Sprite>(path + "R12_G1_Note")));
+        _noteList.Add(new Note("R13_A1_Note", "A_Note", Resources.Load<Sprite>(path + "R13_A1_Note")));
+        
+        _noteList.Add(new Note("R01_Cs_Note", "Cs_Note", Resources.Load<Sprite>(path + "R01_Cs_Note")));
+        _noteList.Add(new Note("R02_Ds_Note", "Ds_Note", Resources.Load<Sprite>(path + "R02_Ds_Note")));
+        _noteList.Add(new Note("R03_Es_Note", "F_Note", Resources.Load<Sprite>(path + "R03_Es_Note")));
+        _noteList.Add(new Note("R04_Fs_Note", "Fs_Note", Resources.Load<Sprite>(path + "R04_Fs_Note")));
+        _noteList.Add(new Note("R05_Gs_Note", "Gs_Note", Resources.Load<Sprite>(path + "R05_Gs_Note")));
+        _noteList.Add(new Note("R06_As_Note", "As_Note", Resources.Load<Sprite>(path + "R06_As_Note")));
+        _noteList.Add(new Note("R07_Bs_Note", "C_Note", Resources.Load<Sprite>(path + "R07_Bs_Note")));
+        _noteList.Add(new Note("R08_C1s_Note", "Cs_Note", Resources.Load<Sprite>(path + "R08_C1s_Note")));
+        _noteList.Add(new Note("R09_D1s_Note", "Ds_Note", Resources.Load<Sprite>(path + "R09_D1s_Note")));
+        _noteList.Add(new Note("R10_E1s_Note", "Es_Note", Resources.Load<Sprite>(path + "R10_E1s_Note")));
+        _noteList.Add(new Note("R11_F1s_Note", "Fs_Note", Resources.Load<Sprite>(path + "R11_F1s_Note")));
+        _noteList.Add(new Note("R12_G1s_Note", "Gs_Note", Resources.Load<Sprite>(path + "R12_G1s_Note")));
+        _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
 
         _noteToPlayImg = GameObject.FindGameObjectWithTag("NoteToPlay").GetComponent<SpriteRenderer>();
         NextNote();
@@ -32,7 +48,7 @@ public class GameController : MonoBehaviour {
     {
         Note randomNote = _noteList[Random.Range(0, _noteList.Count)];
         _noteToPlay = randomNote;
-        _noteToPlayImg.sprite = _noteToPlay.Image;
+        _noteToPlayImg.sprite = _noteToPlay.Sprite;
     }
 
     public void Check(GameObject notePlayed)
@@ -79,12 +95,12 @@ public class Note
 {
     public string Id { get; set; }
     public string Name { get; set; }
-    public Sprite Image { get; set; }
+    public Sprite Sprite { get; set; }
 
-    public Note(string id, string name, Sprite image)
+    public Note(string id, string name, Sprite sprite)
     {
         this.Id = id;
         this.Name = name;
-        this.Image = image;
+        this.Sprite = sprite;
     }
 }

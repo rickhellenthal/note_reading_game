@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2bcb80-3d0b-4a3c-bc7e-68c47aca04d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R01_C_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R01_C_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R02_D_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R02_D_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R03_E_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R03_E_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R04_F_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R04_F_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R05_G_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R05_G_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R06_A_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R06_A_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R07_B_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R07_B_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R08_C1_note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R08_C1_note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R09_D1_note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R09_D1_note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R10_E1_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R10_E1_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R11_F1_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R11_F1_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R12_G1_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R12_G1_Note.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R13_A1_Note.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Notes/R13_A1_Note.PNG.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +46,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="99" />
+          <entry key="cs" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="99" />
+          <entry key="C#" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <marker date="1540364875965" expanded="true" signature="6:113" ph="..." />
                 <marker date="1540364875965" expanded="true" signature="160:228" ph="{...}" />
@@ -88,11 +107,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="433">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="40" selection-end-column="53" />
+              <folding>
+                <marker date="1540367863485" expanded="false" signature="6:78" ph="..." />
+                <marker date="1540367863485" expanded="true" signature="125:4524" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="309:3217" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="3245:3414" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="3460:4008" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="3660:3803" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="3816:3928" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="4089:4522" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="4267:4328" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="4443:4487" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="4543:4804" ph="{...}" />
+                <marker date="1540367863485" expanded="true" signature="4712:4802" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,9 +154,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -211,12 +244,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540331996002</updated>
-      <workItem from="1540332000722" duration="1016000" />
+      <workItem from="1540332000722" duration="3360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1016000" />
+    <option name="totallyTimeSpent" value="3360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,13 +309,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayNote.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -313,12 +339,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <marker date="1540364875965" expanded="true" signature="6:113" ph="..." />
             <marker date="1540364875965" expanded="true" signature="160:228" ph="{...}" />
             <marker date="1540364875965" expanded="true" signature="186:226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="40" selection-end-column="53" />
+          <folding>
+            <marker date="1540367863485" expanded="false" signature="6:78" ph="..." />
+            <marker date="1540367863485" expanded="true" signature="125:4524" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="309:3217" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="3245:3414" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="3460:4008" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="3660:3803" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="3816:3928" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="4089:4522" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="4267:4328" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="4443:4487" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="4543:4804" ph="{...}" />
+            <marker date="1540367863485" expanded="true" signature="4712:4802" ph="{...}" />
           </folding>
         </state>
       </provider>
