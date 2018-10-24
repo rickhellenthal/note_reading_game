@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private int _speed = 7;
-    private GameController gameController;
+    private readonly int _speed = 7;
+    private GameController _gameController;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    gameController = GameObject.Find("GameController").GetComponent<GameController>();
+	    _gameController = GameObject.Find("GameController").GetComponent<GameController>();
 	}
 	
 	// Update is called once per frame
@@ -48,9 +49,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
-            PlayNote note = (PlayNote)other.gameObject.GetComponent(typeof(PlayNote));
-            note.Play();
-            gameController.Check(other.gameObject);
+            if (other.gameObject.CompareTag("Note"))
+            {
+                PlayNote note = (PlayNote)other.gameObject.GetComponent(typeof(PlayNote));
+                note.Play();
+                _gameController.Check(other.gameObject);
+            }
         }
     }
 }

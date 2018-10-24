@@ -13,11 +13,6 @@ public class PlayNote : MonoBehaviour
 	    audioSource = GetComponent<AudioSource>();
 	    audioSource.clip = audioClip;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void Play()
     {
