@@ -1,20 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class GameController : MonoBehaviour {
     private readonly List<Note> _noteList = new List<Note>();
-    private bool _isWaiting;
+
     private Note _noteToPlay;
     private SpriteRenderer _noteToPlayImg;
     private Score _score;
-
+    private SceneController _sceneController;
+    private TextMeshPro _timerText;
+    
     private bool _noteHasBeenPlayedWrong = false;
+    private bool _isWaiting;
+    private float _timer = 60.0f;
 
     void Start ()
     {
         string path = "Images/Notes/RightHand/";
+        
         _noteList.Add(new Note("R01_C_Note", "C_Note", Resources.Load<Sprite>(path + "R01_C_Note")));
         _noteList.Add(new Note("R02_D_Note", "D_Note", Resources.Load<Sprite>(path + "R02_D_Note")));
         _noteList.Add(new Note("R03_E_Note", "E_Note", Resources.Load<Sprite>(path + "R03_E_Note")));
@@ -44,8 +52,21 @@ public class GameController : MonoBehaviour {
         _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
 
         _noteToPlayImg = GameObject.FindGameObjectWithTag("NoteToPlay").GetComponent<SpriteRenderer>();
-        _score = (Score)GameObject.Find("Score").gameObject.GetComponent(typeof(Score));
+        _score = GameObject.Find("Score").gameObject.GetComponent<Score>();
+        _sceneController = GameObject.FindGameObjectWithTag("SceneController").GetComponent<SceneController>();
+        _timerText = GameObject.Find("Timer").GetComponent<TextMeshPro>();
+        
         NextNote();
+    }
+
+    void Update()
+    {
+        _timer -= Time.deltaTime;
+        _timerText.text = "Time left: " + Math.Round(_timer);
+        if (_timer <= 0)
+        {
+            _sceneController.LoadEndGame();
+        }
     }
 
     public void NextNote()
