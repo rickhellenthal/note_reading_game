@@ -10,6 +10,11 @@ public class SceneController : MonoBehaviour {
 		SceneManager.LoadScene("Game");
 	}
 
+	public void LoadMenu()
+	{
+		SceneManager.LoadScene("Menu");
+	}
+
 	public void LoadEndGame()
 	{
 		SceneManager.LoadScene("EndGame");

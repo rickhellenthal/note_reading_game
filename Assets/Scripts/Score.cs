@@ -8,13 +8,14 @@ public class Score : MonoBehaviour
 {
 
 	private int _score;
-	private float _timeItTook = 0.0f;
+	private float _timeItTook;
 	private TextMeshPro _scoreboardText;
 
 	void Start()
 	{
 		_score = 0;
 		_scoreboardText = GetComponent<TextMeshPro>();
+		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void Update()
@@ -34,10 +35,15 @@ public class Score : MonoBehaviour
 			}
 
 			_score += scoreToAdd;
-			_scoreboardText.text = "Score: " + _score.ToString();
+			_scoreboardText.text = "Score: " + _score;
 
 		}
 		_timeItTook = 0.0f;
+	}
+
+	public int GetScore()
+	{
+		return _score;
 	}
 
 }

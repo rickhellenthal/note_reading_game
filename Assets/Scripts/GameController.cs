@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour {
     private SceneController _sceneController;
     private TextMeshPro _timerText;
     
-    private bool _noteHasBeenPlayedWrong = false;
+    private bool _noteHasBeenPlayedWrong;
     private bool _isWaiting;
     private float _timer = 60.0f;
 
@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour {
         _timerText.text = "Time left: " + Math.Round(_timer);
         if (_timer <= 0)
         {
+            CrossSceneInfo.ScoreAchieved = _score.GetScore();
             _sceneController.LoadEndGame();
         }
     }
