@@ -8,6 +8,9 @@ public class GameController : MonoBehaviour {
     private bool _isWaiting;
     private Note _noteToPlay;
     private SpriteRenderer _noteToPlayImg;
+    private Score _score;
+
+    private bool _noteHasBeenPlayedWrong = false;
 
     void Start ()
     {
@@ -35,12 +38,13 @@ public class GameController : MonoBehaviour {
         _noteList.Add(new Note("R07_Bs_Note", "C_Note", Resources.Load<Sprite>(path + "R07_Bs_Note")));
         _noteList.Add(new Note("R08_C1s_Note", "Cs_Note", Resources.Load<Sprite>(path + "R08_C1s_Note")));
         _noteList.Add(new Note("R09_D1s_Note", "Ds_Note", Resources.Load<Sprite>(path + "R09_D1s_Note")));
-        _noteList.Add(new Note("R10_E1s_Note", "Es_Note", Resources.Load<Sprite>(path + "R10_E1s_Note")));
+        _noteList.Add(new Note("R10_E1s_Note", "F_Note", Resources.Load<Sprite>(path + "R10_E1s_Note")));
         _noteList.Add(new Note("R11_F1s_Note", "Fs_Note", Resources.Load<Sprite>(path + "R11_F1s_Note")));
         _noteList.Add(new Note("R12_G1s_Note", "Gs_Note", Resources.Load<Sprite>(path + "R12_G1s_Note")));
         _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
 
         _noteToPlayImg = GameObject.FindGameObjectWithTag("NoteToPlay").GetComponent<SpriteRenderer>();
+        _score = (Score)GameObject.Find("Score").gameObject.GetComponent(typeof(Score));
         NextNote();
     }
 
@@ -62,10 +66,14 @@ public class GameController : MonoBehaviour {
         {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
             nextNote = true;
+            _score.UpdateScore(_noteHasBeenPlayedWrong);
+            _noteHasBeenPlayedWrong = false;
+
         }
         else
         {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            _noteHasBeenPlayedWrong = true;
         }
 
         StartCoroutine(ReturnToOriginalColor(noteItShouldBe, nextNote));
