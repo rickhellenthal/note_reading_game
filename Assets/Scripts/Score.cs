@@ -9,12 +9,11 @@ public class Score : MonoBehaviour
 
 	private int _score;
 	private float _timeItTook;
-	private TextMeshPro _scoreboardText;
+	[SerializeField] public TextMeshPro ScoreboardText;
 
 	void Start()
 	{
 		_score = 0;
-		_scoreboardText = GetComponent<TextMeshPro>();
 	}
 
 	void Update()
@@ -34,7 +33,7 @@ public class Score : MonoBehaviour
 			}
 
 			_score += scoreToAdd;
-			_scoreboardText.text = "Score: " + _score;
+			ScoreboardText.text = "Score: " + _score;
 
 		}
 		_timeItTook = 0.0f;

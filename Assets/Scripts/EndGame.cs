@@ -5,12 +5,11 @@ public class EndGame : MonoBehaviour
 {
 
 	private int _score = CrossSceneInfo.ScoreAchieved;
-	private TextMeshPro _scoreText;
+	[SerializeField] public TextMeshPro ScoreText;
 
 	void Start ()
 	{
-		_scoreText = GetComponent<TextMeshPro>();
-		_scoreText.text = "You scored " + _score + "!";
+		ScoreText.text = "You scored " + _score + "!";
 		CrossSceneInfo.ScoreAchieved = 0;
 	}
 	

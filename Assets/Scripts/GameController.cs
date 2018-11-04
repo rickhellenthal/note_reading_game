@@ -10,10 +10,10 @@ public class GameController : MonoBehaviour {
     private readonly List<Note> _noteList = new List<Note>();
 
     private Note _noteToPlay;
-    private SpriteRenderer _noteToPlayImg;
-    private Score _score;
-    private SceneController _sceneController;
-    private TextMeshPro _timerText;
+    [SerializeField] public SpriteRenderer NoteToPlayImg;
+    [SerializeField] public Score Score;
+    [SerializeField] public SceneController SceneController;
+    [SerializeField] public TextMeshPro TimerText;
     
     private bool _noteHasBeenPlayedWrong;
     private bool _isWaiting;
@@ -36,37 +36,35 @@ public class GameController : MonoBehaviour {
         _noteList.Add(new Note("R11_F1_Note", "F_Note", Resources.Load<Sprite>(path + "R11_F1_Note")));
         _noteList.Add(new Note("R12_G1_Note", "G_Note", Resources.Load<Sprite>(path + "R12_G1_Note")));
         _noteList.Add(new Note("R13_A1_Note", "A_Note", Resources.Load<Sprite>(path + "R13_A1_Note")));
-        
-        _noteList.Add(new Note("R01_Cs_Note", "Cs_Note", Resources.Load<Sprite>(path + "R01_Cs_Note")));
-        _noteList.Add(new Note("R02_Ds_Note", "Ds_Note", Resources.Load<Sprite>(path + "R02_Ds_Note")));
-        _noteList.Add(new Note("R03_Es_Note", "F_Note", Resources.Load<Sprite>(path + "R03_Es_Note")));
-        _noteList.Add(new Note("R04_Fs_Note", "Fs_Note", Resources.Load<Sprite>(path + "R04_Fs_Note")));
-        _noteList.Add(new Note("R05_Gs_Note", "Gs_Note", Resources.Load<Sprite>(path + "R05_Gs_Note")));
-        _noteList.Add(new Note("R06_As_Note", "As_Note", Resources.Load<Sprite>(path + "R06_As_Note")));
-        _noteList.Add(new Note("R07_Bs_Note", "C_Note", Resources.Load<Sprite>(path + "R07_Bs_Note")));
-        _noteList.Add(new Note("R08_C1s_Note", "Cs_Note", Resources.Load<Sprite>(path + "R08_C1s_Note")));
-        _noteList.Add(new Note("R09_D1s_Note", "Ds_Note", Resources.Load<Sprite>(path + "R09_D1s_Note")));
-        _noteList.Add(new Note("R10_E1s_Note", "F_Note", Resources.Load<Sprite>(path + "R10_E1s_Note")));
-        _noteList.Add(new Note("R11_F1s_Note", "Fs_Note", Resources.Load<Sprite>(path + "R11_F1s_Note")));
-        _noteList.Add(new Note("R12_G1s_Note", "Gs_Note", Resources.Load<Sprite>(path + "R12_G1s_Note")));
-        _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
 
-        _noteToPlayImg = GameObject.FindGameObjectWithTag("NoteToPlay").GetComponent<SpriteRenderer>();
-        _score = GameObject.Find("Score").gameObject.GetComponent<Score>();
-        _sceneController = GameObject.FindGameObjectWithTag("SceneController").GetComponent<SceneController>();
-        _timerText = GameObject.Find("Timer").GetComponent<TextMeshPro>();
-        
+        if (CrossSceneInfo.IncludeSharpNotes)
+        {
+            _noteList.Add(new Note("R01_Cs_Note", "Cs_Note", Resources.Load<Sprite>(path + "R01_Cs_Note")));
+            _noteList.Add(new Note("R02_Ds_Note", "Ds_Note", Resources.Load<Sprite>(path + "R02_Ds_Note")));
+            _noteList.Add(new Note("R03_Es_Note", "F_Note", Resources.Load<Sprite>(path + "R03_Es_Note")));
+            _noteList.Add(new Note("R04_Fs_Note", "Fs_Note", Resources.Load<Sprite>(path + "R04_Fs_Note")));
+            _noteList.Add(new Note("R05_Gs_Note", "Gs_Note", Resources.Load<Sprite>(path + "R05_Gs_Note")));
+            _noteList.Add(new Note("R06_As_Note", "As_Note", Resources.Load<Sprite>(path + "R06_As_Note")));
+            _noteList.Add(new Note("R07_Bs_Note", "C_Note", Resources.Load<Sprite>(path + "R07_Bs_Note")));
+            _noteList.Add(new Note("R08_C1s_Note", "Cs_Note", Resources.Load<Sprite>(path + "R08_C1s_Note")));
+            _noteList.Add(new Note("R09_D1s_Note", "Ds_Note", Resources.Load<Sprite>(path + "R09_D1s_Note")));
+            _noteList.Add(new Note("R10_E1s_Note", "F_Note", Resources.Load<Sprite>(path + "R10_E1s_Note")));
+            _noteList.Add(new Note("R11_F1s_Note", "Fs_Note", Resources.Load<Sprite>(path + "R11_F1s_Note")));
+            _noteList.Add(new Note("R12_G1s_Note", "Gs_Note", Resources.Load<Sprite>(path + "R12_G1s_Note")));
+            _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
+        }
+
         NextNote();
     }
 
     void Update()
     {
         _timer -= Time.deltaTime;
-        _timerText.text = "Time left: " + Math.Round(_timer);
+        TimerText.text = "Time left: " + Math.Round(_timer);
         if (_timer <= 0)
         {
-            CrossSceneInfo.ScoreAchieved = _score.GetScore();
-            _sceneController.LoadEndGame();
+            CrossSceneInfo.ScoreAchieved = Score.GetScore();
+            SceneController.LoadEndGame();
         }
     }
 
@@ -74,7 +72,7 @@ public class GameController : MonoBehaviour {
     {
         Note randomNote = _noteList[Random.Range(0, _noteList.Count)];
         _noteToPlay = randomNote;
-        _noteToPlayImg.sprite = _noteToPlay.Sprite;
+        NoteToPlayImg.sprite = _noteToPlay.Sprite;
     }
 
     public void Check(GameObject notePlayed)
@@ -88,7 +86,7 @@ public class GameController : MonoBehaviour {
         {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
             nextNote = true;
-            _score.UpdateScore(_noteHasBeenPlayedWrong);
+            Score.UpdateScore(_noteHasBeenPlayedWrong);
             _noteHasBeenPlayedWrong = false;
 
         }
@@ -129,8 +127,8 @@ public class Note
 
     public Note(string id, string name, Sprite sprite)
     {
-        this.Id = id;
-        this.Name = name;
-        this.Sprite = sprite;
+        Id = id;
+        Name = name;
+        Sprite = sprite;
     }
 }
