@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 	    this.transform.position += 
-	        new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * this._speed * Time.deltaTime;
+	        new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * _speed * Time.deltaTime;
 	}
 
     void OnTriggerEnter(Collider other)

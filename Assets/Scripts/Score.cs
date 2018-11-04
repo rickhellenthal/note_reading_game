@@ -15,7 +15,6 @@ public class Score : MonoBehaviour
 	{
 		_score = 0;
 		_scoreboardText = GetComponent<TextMeshPro>();
-		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void Update()
@@ -29,7 +28,7 @@ public class Score : MonoBehaviour
 		if (!noteHasBeenPlayedWrong)
 		{
 			int scoreToAdd = 100 - (10 * (int) Math.Round(_timeItTook));
-			if (scoreToAdd < 0)
+			if (scoreToAdd < 0) 
 			{
 				scoreToAdd = 0;
 			}
