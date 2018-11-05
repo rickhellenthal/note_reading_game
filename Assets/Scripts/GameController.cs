@@ -54,6 +54,23 @@ public class GameController : MonoBehaviour {
             _noteList.Add(new Note("R13_A1s_Note", "As_Note", Resources.Load<Sprite>(path + "R13_A1s_Note")));
         }
 
+        if (CrossSceneInfo.IncludeFlatNotes)
+        {
+            _noteList.Add(new Note("R01_Cb_Note", "B_Note", Resources.Load<Sprite>(path + "R01_Cb_Note")));
+            _noteList.Add(new Note("R02_Db_Note", "Cs_Note", Resources.Load<Sprite>(path + "R02_Db_Note")));
+            _noteList.Add(new Note("R03_Eb_Note", "Ds_Note", Resources.Load<Sprite>(path + "R03_Eb_Note")));
+            _noteList.Add(new Note("R04_Fb_Note", "E_Note", Resources.Load<Sprite>(path + "R04_Fb_Note")));
+            _noteList.Add(new Note("R05_Gb_Note", "Fs_Note", Resources.Load<Sprite>(path + "R05_Gb_Note")));
+            _noteList.Add(new Note("R06_Ab_Note", "Gs_Note", Resources.Load<Sprite>(path + "R06_Ab_Note")));
+            _noteList.Add(new Note("R07_Bb_Note", "As_Note", Resources.Load<Sprite>(path + "R07_Bb_Note")));
+            _noteList.Add(new Note("R08_C1b_Note", "B_Note", Resources.Load<Sprite>(path + "R08_C1b_Note")));
+            _noteList.Add(new Note("R09_D1b_Note", "Cs_Note", Resources.Load<Sprite>(path + "R09_D1b_Note")));
+            _noteList.Add(new Note("R10_E1b_Note", "Ds_Note", Resources.Load<Sprite>(path + "R10_E1b_Note")));
+            _noteList.Add(new Note("R11_F1b_Note", "E_Note", Resources.Load<Sprite>(path + "R11_F1b_Note")));
+            _noteList.Add(new Note("R12_G1b_Note", "Fs_Note", Resources.Load<Sprite>(path + "R12_G1b_Note")));
+            _noteList.Add(new Note("R13_A1b_Note", "Gs_Note", Resources.Load<Sprite>(path + "R13_A1b_Note")));
+        }
+
         NextNote();
     }
 
