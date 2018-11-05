@@ -8,10 +8,13 @@ public class SceneController : MonoBehaviour
 	[SerializeField] public Toggle IncludeSharpNotes;
 	[SerializeField] public Toggle IncludeFlatNotes;
 
-	public void LoadGame()
+	public void LoadGame(bool playAgain)
 	{
-		CrossSceneInfo.IncludeSharpNotes = IncludeSharpNotes.isOn;
-		CrossSceneInfo.IncludeFlatNotes = IncludeFlatNotes.isOn;
+		if (!playAgain)
+		{
+			CrossSceneInfo.IncludeSharpNotes = IncludeSharpNotes.isOn;
+			CrossSceneInfo.IncludeFlatNotes = IncludeFlatNotes.isOn;
+		}
 		SceneManager.LoadScene("Game");
 	}
 

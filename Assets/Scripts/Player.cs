@@ -48,6 +48,11 @@ public class Player : MonoBehaviour
                 note.Play();
                 GameController.Check(other.gameObject);
             }
+
+            if (other.gameObject.CompareTag("UI") && other.gameObject.name.Equals("Quit_Note"))
+            {
+                GameController.EndGame();
+            }
         }
     }
 }

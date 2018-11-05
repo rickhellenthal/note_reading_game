@@ -80,8 +80,7 @@ public class GameController : MonoBehaviour {
         TimerText.text = "Time left: " + Math.Round(_timer);
         if (_timer <= 0)
         {
-            CrossSceneInfo.ScoreAchieved = Score.GetScore();
-            SceneController.LoadEndGame();
+            EndGame();
         }
     }
 
@@ -133,6 +132,12 @@ public class GameController : MonoBehaviour {
         }
 
         _isWaiting = false;
+    }
+
+    public void EndGame()
+    {
+        CrossSceneInfo.ScoreAchieved = Score.GetScore();
+        SceneController.LoadEndGame();
     }
 }
 

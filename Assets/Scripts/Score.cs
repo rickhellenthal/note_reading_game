@@ -26,7 +26,7 @@ public class Score : MonoBehaviour
 	{
 		if (!noteHasBeenPlayedWrong)
 		{
-			int scoreToAdd = 100 - (10 * (int) Math.Round(_timeItTook));
+			int scoreToAdd = 100 - (5 * (int) Math.Round(_timeItTook));
 			if (scoreToAdd < 0) 
 			{
 				scoreToAdd = 0;
