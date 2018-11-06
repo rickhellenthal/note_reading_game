@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2bcb80-3d0b-4a3c-bc7e-68c47aca04d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Educatieve_games_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Educatieve_games_1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Score.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Background.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Background.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Boundary.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Boundary.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/C_Note.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/C_Note.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Cs_Note.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Cs_Note.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Directional Light.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Directional Light.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Main Camera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Main Camera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/SceneController.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefab/SceneController.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,22 +28,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="3190" />
+          <entry key="cs" value="3276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="3190" />
+          <entry key="C#" value="3276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="12" />
+          <entry key="cs" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="12" />
+          <entry key="C#" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -115,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="225">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <marker date="1541456923606" expanded="false" signature="6:105" ph="..." />
                 <marker date="1541456923606" expanded="true" signature="141:698" ph="{...}" />
@@ -163,36 +145,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayNote.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <marker date="1541351838957" expanded="false" signature="6:78" ph="..." />
-                <marker date="1541351838957" expanded="true" signature="117:393" ph="{...}" />
-                <marker date="1541351838957" expanded="true" signature="237:327" ph="{...}" />
-                <marker date="1541351838957" expanded="true" signature="351:391" ph="{...}" />
+                <marker date="1541499502855" expanded="false" signature="6:78" ph="..." />
+                <marker date="1541499502855" expanded="true" signature="117:362" ph="{...}" />
+                <marker date="1541499502855" expanded="true" signature="206:296" ph="{...}" />
+                <marker date="1541499502855" expanded="true" signature="320:360" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="328">
+              <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
               <folding>
-                <marker date="1541453848132" expanded="false" signature="6:113" ph="..." />
-                <marker date="1541453848132" expanded="true" signature="150:1668" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="266:407" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="448:490" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="530:572" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="578:793" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
-                <marker date="1541453848132" expanded="true" signature="834:966" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="1006:1089" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="1129:1666" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="1216:1660" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="1279:1483" ph="{...}" />
-                <marker date="1541453848132" expanded="true" signature="1580:1650" ph="{...}" />
+                <marker date="1541499835425" expanded="false" signature="6:113" ph="..." />
+                <marker date="1541499835425" expanded="true" signature="150:1668" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="266:407" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="448:490" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="530:572" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="578:793" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
+                <marker date="1541499835425" expanded="true" signature="834:966" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="1006:1089" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="1129:1666" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="1216:1660" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="1279:1483" ph="{...}" />
+                <marker date="1541499835425" expanded="true" signature="1580:1650" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -205,10 +187,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/77/6f54a063/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/ec/229831ab/Void.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CrossSceneInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E635F8C4-E065-42FD-9980-DE39052F5E36/56/6302921c/Collider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs" root0="FORCE_HIGHLIGHTING" />
@@ -220,12 +204,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scoreboard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CrossSceneInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayNote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -323,12 +307,12 @@
       <workItem from="1540564698530" duration="7505000" />
       <workItem from="1540806041232" duration="4144000" />
       <workItem from="1540823752497" duration="223000" />
-      <workItem from="1541270833819" duration="10272000" />
+      <workItem from="1541270833819" duration="11475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28424000" />
+    <option name="totallyTimeSpent" value="29627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,46 +391,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayNote.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1541351838957" expanded="false" signature="6:78" ph="..." />
-            <marker date="1541351838957" expanded="true" signature="117:393" ph="{...}" />
-            <marker date="1541351838957" expanded="true" signature="237:327" ph="{...}" />
-            <marker date="1541351838957" expanded="true" signature="351:391" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CrossSceneInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
             <marker date="1541372129290" expanded="true" signature="34:168" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <marker date="1541453848132" expanded="false" signature="6:113" ph="..." />
-            <marker date="1541453848132" expanded="true" signature="150:1668" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="266:407" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="448:490" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="530:572" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="578:793" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
-            <marker date="1541453848132" expanded="true" signature="834:966" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="1006:1089" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="1129:1666" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="1216:1660" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="1279:1483" ph="{...}" />
-            <marker date="1541453848132" expanded="true" signature="1580:1650" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -506,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <marker date="1541456923606" expanded="false" signature="6:105" ph="..." />
             <marker date="1541456923606" expanded="true" signature="141:698" ph="{...}" />
@@ -517,6 +467,54 @@
             <marker date="1541456923606" expanded="true" signature="426:623" ph="{...}" />
             <marker date="1541456923606" expanded="true" signature="517:547" ph="{...}" />
             <marker date="1541456923606" expanded="true" signature="672:695" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayNote.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <marker date="1541499502855" expanded="false" signature="6:78" ph="..." />
+            <marker date="1541499502855" expanded="true" signature="117:362" ph="{...}" />
+            <marker date="1541499502855" expanded="true" signature="206:296" ph="{...}" />
+            <marker date="1541499502855" expanded="true" signature="320:360" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/77/6f54a063/Component.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E635F8C4-E065-42FD-9980-DE39052F5E36/56/6302921c/Collider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+          <folding>
+            <marker date="1541499835425" expanded="false" signature="6:113" ph="..." />
+            <marker date="1541499835425" expanded="true" signature="150:1668" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="266:407" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="448:490" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="530:572" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="578:793" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
+            <marker date="1541499835425" expanded="true" signature="834:966" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="1006:1089" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="1129:1666" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="1216:1660" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="1279:1483" ph="{...}" />
+            <marker date="1541499835425" expanded="true" signature="1580:1650" ph="{...}" />
           </folding>
         </state>
       </provider>
