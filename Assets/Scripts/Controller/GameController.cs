@@ -122,7 +122,7 @@ namespace Controller
                 noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
                 nextNote = true;
                 Score.UpdateScore(_noteHasBeenPlayedWrong);
-                CrossSceneInfo.NumberOfAssignmentsCorrect += 1;
+                if (!_noteHasBeenPlayedWrong) CrossSceneInfo.NumberOfAssignmentsCorrect += 1;
                 _noteHasBeenPlayedWrong = false;
 
             }
