@@ -103,12 +103,14 @@ public class GameController : MonoBehaviour {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
             nextNote = true;
             Score.UpdateScore(_noteHasBeenPlayedWrong);
+            CrossSceneInfo.NumberOfAssignmentsCorrect += 1;
             _noteHasBeenPlayedWrong = false;
 
         }
         else
         {
             noteItShouldBe.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            CrossSceneInfo.NumberOfAssignmentsWrong += 1;
             _noteHasBeenPlayedWrong = true;
         }
 
