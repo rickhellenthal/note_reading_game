@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 293052222}
-  NumbefOfCorrect: {fileID: 915228058}
+  NumberOfCorrect: {fileID: 915228058}
 --- !u!1 &915228055
 GameObject:
   m_ObjectHideFlags: 0
