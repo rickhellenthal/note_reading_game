@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe2bcb80-3d0b-4a3c-bc7e-68c47aca04d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fe2bcb80-3d0b-4a3c-bc7e-68c47aca04d7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +12,7 @@
     <session id="1199697830">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.8" value="2" />
@@ -51,31 +49,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="124" column="93" lean-forward="true" selection-start-line="124" selection-start-column="93" selection-end-line="124" selection-end-column="93" />
+            <state relative-caret-position="-242">
+              <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
               <folding>
-                <marker date="1541870365582" expanded="true" signature="6:165" ph="..." />
-                <marker date="1541870365582" expanded="true" signature="188:8539" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="239:8537" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="700:874" ph="/* Based on the settings the user can change in the Main Menu, specific types of notes are loaded and added to ... */" />
-                <marker date="1541870365582" expanded="true" signature="896:5511" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="2415:3921" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="3971:5476" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="5521:5625" ph="/* This causes the timer to count down, when it reaches zero, the function EndGame() is called. ... */" />
-                <marker date="1541870365582" expanded="true" signature="5647:5854" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="5789:5844" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="5864:6006" ph="/* This retrieves a random note from the list of notes, sets it as the note to play, and ... */" />
-                <marker date="1541870365582" expanded="true" signature="6037:6225" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="6235:6419" ph="/* This is called from the Player script. Here the note the player played is validated. ... */" />
-                <marker date="1541870365582" expanded="true" signature="6468:7398" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="6688:7051" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="7068:7302" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="7408:7639" ph="/* This makes the game wait one second before doing anything. ... */" />
-                <marker date="1541870365582" expanded="true" signature="7723:8216" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="7921:7994" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="8117:8173" ph="{...}" />
-                <marker date="1541870365582" expanded="true" signature="8226:8377" ph="/* This function is called when the game is supposed to end. ... */" />
-                <marker date="1541870365582" expanded="true" signature="8407:8531" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="6:165" ph="..." />
+                <marker date="1541870551312" expanded="true" signature="188:8539" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="239:8537" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="700:874" ph="/* Based on the settings the user can change in the Main Menu, specific types of notes are loaded and added to ... */" />
+                <marker date="1541870551312" expanded="true" signature="896:5511" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="2415:3921" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="3971:5476" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="5521:5625" ph="/* This causes the timer to count down, when it reaches zero, the function EndGame() is called. ... */" />
+                <marker date="1541870551312" expanded="true" signature="5647:5854" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="5789:5844" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="5864:6006" ph="/* This retrieves a random note from the list of notes, sets it as the note to play, and ... */" />
+                <marker date="1541870551312" expanded="true" signature="6037:6225" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="6235:6419" ph="/* This is called from the Player script. Here the note the player played is validated. ... */" />
+                <marker date="1541870551312" expanded="true" signature="6468:7398" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="6688:7051" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="7068:7302" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="7408:7639" ph="/* This makes the game wait one second before doing anything. ... */" />
+                <marker date="1541870551312" expanded="true" signature="7723:8216" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="7921:7994" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="8117:8173" ph="{...}" />
+                <marker date="1541870551312" expanded="true" signature="8226:8377" ph="/* This function is called when the game is supposed to end. ... */" />
+                <marker date="1541870551312" expanded="true" signature="8407:8531" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -234,12 +232,12 @@
       <workItem from="1540823752497" duration="223000" />
       <workItem from="1541270833819" duration="12525000" />
       <workItem from="1541851180061" duration="1723000" />
-      <workItem from="1541862853683" duration="5599000" />
+      <workItem from="1541862853683" duration="6224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37999000" />
+    <option name="totallyTimeSpent" value="38624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,7 +250,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14401294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -389,10 +386,10 @@
         <state relative-caret-position="60">
           <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
-            <marker date="1541870127388" expanded="true" signature="40:310" ph="{...}" />
-            <marker date="1541870127388" expanded="true" signature="81:308" ph="{...}" />
-            <marker date="1541870127388" expanded="true" signature="168:252" ph="{...}" />
-            <marker date="1541870127388" expanded="true" signature="274:305" ph="{...}" />
+            <marker date="1541870551316" expanded="true" signature="40:310" ph="{...}" />
+            <marker date="1541870551316" expanded="true" signature="81:308" ph="{...}" />
+            <marker date="1541870551316" expanded="true" signature="168:252" ph="{...}" />
+            <marker date="1541870551316" expanded="true" signature="274:305" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -402,21 +399,21 @@
         <state relative-caret-position="345">
           <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
-            <marker date="1541870127407" expanded="true" signature="40:2442" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="92:2440" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="212:381" ph="/* This checks for user input on the horizontal and vertical axis, so if the arrow keys or WASD is pressed. ... */" />
-            <marker date="1541870127407" expanded="true" signature="404:573" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="583:732" ph="/* The piano keys collision boxes are triggers, whenever the player enters or stays in this collider the game che ... */" />
-            <marker date="1541870127407" expanded="true" signature="776:830" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="874:928" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="938:1160" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
-            <marker date="1541870127407" expanded="true" signature="1205:1353" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="1397:1492" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="1502:1794" ph="/* Checks for player input (Enter key, or de space bar). If the player is currently colliding with a note, ... */" />
-            <marker date="1541870127407" expanded="true" signature="1837:2434" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="1932:2424" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="2003:2227" ph="{...}" />
-            <marker date="1541870127407" expanded="true" signature="2328:2410" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="40:2442" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="92:2440" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="212:381" ph="/* This checks for user input on the horizontal and vertical axis, so if the arrow keys or WASD is pressed. ... */" />
+            <marker date="1541870551318" expanded="true" signature="404:573" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="583:732" ph="/* The piano keys collision boxes are triggers, whenever the player enters or stays in this collider the game che ... */" />
+            <marker date="1541870551318" expanded="true" signature="776:830" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="874:928" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="938:1160" ph="/* Together with the OnCollisionStay function, this causes the player object to NOT rotate in 3D. ... */" />
+            <marker date="1541870551318" expanded="true" signature="1205:1353" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="1397:1492" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="1502:1794" ph="/* Checks for player input (Enter key, or de space bar). If the player is currently colliding with a note, ... */" />
+            <marker date="1541870551318" expanded="true" signature="1837:2434" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="1932:2424" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="2003:2227" ph="{...}" />
+            <marker date="1541870551318" expanded="true" signature="2328:2410" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -426,13 +423,13 @@
         <state relative-caret-position="60">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
-            <marker date="1541870127318" expanded="true" signature="6:88" ph="..." />
-            <marker date="1541870127318" expanded="true" signature="110:650" ph="{...}" />
-            <marker date="1541870127318" expanded="true" signature="158:648" ph="{...}" />
-            <marker date="1541870127318" expanded="true" signature="305:501" ph="{...}" />
-            <marker date="1541870127318" expanded="true" signature="328:462" ph="{...}" />
-            <marker date="1541870127318" expanded="true" signature="527:570" ph="{...}" />
-            <marker date="1541870127318" expanded="true" signature="599:645" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="6:88" ph="..." />
+            <marker date="1541870551321" expanded="true" signature="110:650" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="158:648" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="305:501" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="328:462" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="527:570" ph="{...}" />
+            <marker date="1541870551321" expanded="true" signature="599:645" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -442,9 +439,9 @@
         <state relative-caret-position="30">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
-            <marker date="1541870127300" expanded="true" signature="15:465" ph="{...}" />
-            <marker date="1541870127300" expanded="true" signature="53:463" ph="{...}" />
-            <marker date="1541870127300" expanded="true" signature="362:460" ph="{...}" />
+            <marker date="1541870551325" expanded="true" signature="15:465" ph="{...}" />
+            <marker date="1541870551325" expanded="true" signature="53:463" ph="{...}" />
+            <marker date="1541870551325" expanded="true" signature="362:460" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -454,9 +451,9 @@
         <state relative-caret-position="60">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding>
-            <marker date="1541870127381" expanded="true" signature="35:351" ph="{...}" />
-            <marker date="1541870127381" expanded="true" signature="59:349" ph="{...}" />
-            <marker date="1541870127381" expanded="true" signature="248:343" ph="{...}" />
+            <marker date="1541870551327" expanded="true" signature="35:351" ph="{...}" />
+            <marker date="1541870551327" expanded="true" signature="59:349" ph="{...}" />
+            <marker date="1541870551327" expanded="true" signature="248:343" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -466,17 +463,17 @@
         <state relative-caret-position="60">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
-            <marker date="1541870127337" expanded="false" signature="6:45" ph="..." />
-            <marker date="1541870127337" expanded="true" signature="61:1021" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="99:1019" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="224:247" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="251:344" ph="/* This counts the amount of time it took the player to play the correct note. ... */" />
-            <marker date="1541870127337" expanded="true" signature="360:402" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="407:640" ph="/* This give the player points based on the time it took to play the correct note. ... */" />
-            <marker date="1541870127337" expanded="true" signature="695:964" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="731:937" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="825:858" ph="{...}" />
-            <marker date="1541870127337" expanded="true" signature="989:1015" ph="{...}" />
+            <marker date="1541870551335" expanded="false" signature="6:45" ph="..." />
+            <marker date="1541870551335" expanded="true" signature="61:1021" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="99:1019" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="224:247" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="251:344" ph="/* This counts the amount of time it took the player to play the correct note. ... */" />
+            <marker date="1541870551335" expanded="true" signature="360:402" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="407:640" ph="/* This give the player points based on the time it took to play the correct note. ... */" />
+            <marker date="1541870551335" expanded="true" signature="695:964" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="731:937" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="825:858" ph="{...}" />
+            <marker date="1541870551335" expanded="true" signature="989:1015" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -486,12 +483,12 @@
         <state relative-caret-position="45">
           <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
-            <marker date="1541870127357" expanded="false" signature="6:44" ph="..." />
-            <marker date="1541870127357" expanded="true" signature="60:920" ph="{...}" />
-            <marker date="1541870127357" expanded="true" signature="100:918" ph="{...}" />
-            <marker date="1541870127357" expanded="true" signature="476:531" ph="{...}" />
-            <marker date="1541870127357" expanded="true" signature="535:648" ph="/* This sets the text values in the EndGame scene to the values that were retrieved from CrossSceneInfo. ... */" />
-            <marker date="1541870127357" expanded="true" signature="671:913" ph="{...}" />
+            <marker date="1541870551333" expanded="false" signature="6:44" ph="..." />
+            <marker date="1541870551333" expanded="true" signature="60:920" ph="{...}" />
+            <marker date="1541870551333" expanded="true" signature="100:918" ph="{...}" />
+            <marker date="1541870551333" expanded="true" signature="476:531" ph="{...}" />
+            <marker date="1541870551333" expanded="true" signature="535:648" ph="/* This sets the text values in the EndGame scene to the values that were retrieved from CrossSceneInfo. ... */" />
+            <marker date="1541870551333" expanded="true" signature="671:913" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -501,40 +498,40 @@
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="27" />
           <folding>
-            <marker date="1541870127371" expanded="true" signature="40:162" ph="{...}" />
-            <marker date="1541870127371" expanded="true" signature="90:160" ph="{...}" />
-            <marker date="1541870127371" expanded="true" signature="109:157" ph="{...}" />
+            <marker date="1541870551310" expanded="true" signature="40:162" ph="{...}" />
+            <marker date="1541870551310" expanded="true" signature="90:160" ph="{...}" />
+            <marker date="1541870551310" expanded="true" signature="109:157" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="124" column="93" lean-forward="true" selection-start-line="124" selection-start-column="93" selection-end-line="124" selection-end-column="93" />
+        <state relative-caret-position="-242">
+          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
           <folding>
-            <marker date="1541870365582" expanded="true" signature="6:165" ph="..." />
-            <marker date="1541870365582" expanded="true" signature="188:8539" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="239:8537" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="700:874" ph="/* Based on the settings the user can change in the Main Menu, specific types of notes are loaded and added to ... */" />
-            <marker date="1541870365582" expanded="true" signature="896:5511" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="2415:3921" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="3971:5476" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="5521:5625" ph="/* This causes the timer to count down, when it reaches zero, the function EndGame() is called. ... */" />
-            <marker date="1541870365582" expanded="true" signature="5647:5854" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="5789:5844" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="5864:6006" ph="/* This retrieves a random note from the list of notes, sets it as the note to play, and ... */" />
-            <marker date="1541870365582" expanded="true" signature="6037:6225" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="6235:6419" ph="/* This is called from the Player script. Here the note the player played is validated. ... */" />
-            <marker date="1541870365582" expanded="true" signature="6468:7398" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="6688:7051" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="7068:7302" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="7408:7639" ph="/* This makes the game wait one second before doing anything. ... */" />
-            <marker date="1541870365582" expanded="true" signature="7723:8216" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="7921:7994" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="8117:8173" ph="{...}" />
-            <marker date="1541870365582" expanded="true" signature="8226:8377" ph="/* This function is called when the game is supposed to end. ... */" />
-            <marker date="1541870365582" expanded="true" signature="8407:8531" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="6:165" ph="..." />
+            <marker date="1541870551312" expanded="true" signature="188:8539" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="239:8537" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="700:874" ph="/* Based on the settings the user can change in the Main Menu, specific types of notes are loaded and added to ... */" />
+            <marker date="1541870551312" expanded="true" signature="896:5511" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="2415:3921" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="3971:5476" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="5521:5625" ph="/* This causes the timer to count down, when it reaches zero, the function EndGame() is called. ... */" />
+            <marker date="1541870551312" expanded="true" signature="5647:5854" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="5789:5844" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="5864:6006" ph="/* This retrieves a random note from the list of notes, sets it as the note to play, and ... */" />
+            <marker date="1541870551312" expanded="true" signature="6037:6225" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="6235:6419" ph="/* This is called from the Player script. Here the note the player played is validated. ... */" />
+            <marker date="1541870551312" expanded="true" signature="6468:7398" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="6688:7051" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="7068:7302" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="7408:7639" ph="/* This makes the game wait one second before doing anything. ... */" />
+            <marker date="1541870551312" expanded="true" signature="7723:8216" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="7921:7994" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="8117:8173" ph="{...}" />
+            <marker date="1541870551312" expanded="true" signature="8226:8377" ph="/* This function is called when the game is supposed to end. ... */" />
+            <marker date="1541870551312" expanded="true" signature="8407:8531" ph="{...}" />
           </folding>
         </state>
       </provider>
