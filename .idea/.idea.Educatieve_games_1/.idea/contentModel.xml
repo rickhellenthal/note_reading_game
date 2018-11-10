@@ -11,6 +11,7 @@
           <e p="CrossSceneInfo.cs" t="Include" />
           <e p="EndGame.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="Note.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayNote.cs" t="Include" />
           <e p="SceneController.cs" t="Include" />

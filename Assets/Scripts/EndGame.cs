@@ -3,21 +3,27 @@ using UnityEngine;
 
 public class EndGame : MonoBehaviour
 {
-
-	private int _score = CrossSceneInfo.ScoreAchieved;
-	private int _numberOfAssignmentsWrong = CrossSceneInfo.NumberOfAssignmentsWrong;
-	private int _numberOfAssignmentsCorrect = CrossSceneInfo.NumberOfAssignmentsCorrect;
+	private readonly int _score = CrossSceneInfo.ScoreAchieved;
+	private readonly int _numberOfAssignmentsWrong = CrossSceneInfo.NumberOfAssignmentsWrong;
+	private readonly int _numberOfAssignmentsCorrect = CrossSceneInfo.NumberOfAssignmentsCorrect;
 	
 	[SerializeField] public TextMeshPro ScoreText;
-	[SerializeField] public TextMeshPro NumbefOfCorrect;
+	[SerializeField] public TextMeshPro NumberOfCorrect;
 
 	void Start ()
 	{
-		ScoreText.text = "You scored " + _score + "!";
-		NumbefOfCorrect.text = "You played " + _numberOfAssignmentsCorrect + " out of " + 
-		                       (_numberOfAssignmentsCorrect + _numberOfAssignmentsWrong) + " correct";
-		
+		SetTextValues();
 		CrossSceneInfo.Reset();
+	}
+
+	/*
+	 * This sets the text values in the EndGame scene to the values that were retrieved from CrossSceneInfo.
+	 */
+	void SetTextValues()
+	{
+		ScoreText.text = "You scored " + _score + "!";
+		NumberOfCorrect.text = "You played " + _numberOfAssignmentsCorrect + " out of " + 
+		                       (_numberOfAssignmentsCorrect + _numberOfAssignmentsWrong) + " correct";
 	}
 	
 }

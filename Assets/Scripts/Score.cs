@@ -16,12 +16,20 @@ public class Score : MonoBehaviour
 		_score = 0;
 	}
 
+	/*
+     * This counts the amount of time it took the player to play the correct note.
+     */
 	void Update()
 	{
 		_timeItTook += Time.deltaTime;
 	}
 
 
+	/*
+	 * This give the player points based on the time it took to play the correct note.
+	 * If the assignment has failed before (the player played the wrong note first), no points are awarded.
+	 * Resets the timer _timeItTook.
+     */
 	public void UpdateScore(bool noteHasBeenPlayedWrong)
 	{
 		if (!noteHasBeenPlayedWrong)

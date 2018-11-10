@@ -19,9 +19,13 @@ public class GameController : MonoBehaviour {
     private bool _isWaiting;
     private float _timer = 60.0f;
 
+    /*
+	 * Based on the settings the user can change in the Main Menu, specific types of notes are loaded and added to
+     * a list. Then the function NextNote() is called.
+	 */
     void Start ()
     {
-        string path = "Images/Notes/RightHand/";
+        const string path = "Images/Notes/RightHand/";
         
         _noteList.Add(new Note("R01_C_Note", "C_Note", Resources.Load<Sprite>(path + "R01_C_Note")));
         _noteList.Add(new Note("R02_D_Note", "D_Note", Resources.Load<Sprite>(path + "R02_D_Note")));
@@ -74,6 +78,9 @@ public class GameController : MonoBehaviour {
         NextNote();
     }
 
+    /*
+	 * This causes the timer to count down, when it reaches zero, the function EndGame() is called.
+	 */
     void Update()
     {
         _timer -= Time.deltaTime;
@@ -84,6 +91,10 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    /*
+	 * This retrieves a random note from the list of notes, sets it as the note to play, and
+     * displays the assignment to the user. 
+	 */
     public void NextNote()
     {
         Note randomNote = _noteList[Random.Range(0, _noteList.Count)];
@@ -91,6 +102,10 @@ public class GameController : MonoBehaviour {
         NoteToPlayImg.sprite = _noteToPlay.Sprite;
     }
 
+    /*
+     * This is called from the Player script. Here the note the player played is validated.
+     * If a note is lit up (green or red) and thus _isWaiting, the function ends.
+     */
     public void Check(GameObject notePlayed)
     {
         GameObject noteItShouldBe = GameObject.Find(_noteToPlay.Name);
@@ -113,10 +128,15 @@ public class GameController : MonoBehaviour {
             CrossSceneInfo.NumberOfAssignmentsWrong += 1;
             _noteHasBeenPlayedWrong = true;
         }
-
+        
         StartCoroutine(ReturnToOriginalColor(noteItShouldBe, nextNote));
     }
 
+    /*
+     * This makes the game wait one second before doing anything.
+     * After the wait the lit up note is set back to its original color.
+     * Based on the nextNote parameter, the NextNote() function is called or not.
+     */
     IEnumerator ReturnToOriginalColor(GameObject noteItShouldBe, bool nextNote)
     {
         _isWaiting = true;
@@ -136,6 +156,10 @@ public class GameController : MonoBehaviour {
         _isWaiting = false;
     }
 
+    /*
+     * This function is called when the game is supposed to end.
+     * It sets the score in the CrossSceneInfo and loads the EndGame scene.
+     */
     public void EndGame()
     {
         CrossSceneInfo.ScoreAchieved = Score.GetScore();
@@ -143,16 +167,3 @@ public class GameController : MonoBehaviour {
     }
 }
 
-public class Note
-{
-    public string Id { get; set; }
-    public string Name { get; set; }
-    public Sprite Sprite { get; set; }
-
-    public Note(string id, string name, Sprite sprite)
-    {
-        Id = id;
-        Name = name;
-        Sprite = sprite;
-    }
-}
