@@ -9,6 +9,7 @@
 		public static int NumberOfAssignmentsCorrect = 0;
 	
 		// Settings
+		public static int ClefSetting = 0; // 0 = Right hand only, 1 = Left hand only, 2 = Both hands
 		public static bool IncludeSharpNotes = true;
 		public static bool IncludeFlatNotes = true;
 
