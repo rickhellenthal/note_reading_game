@@ -49,5 +49,10 @@ namespace Controller
 		{
 			SceneManager.LoadScene("EndGame");
 		}
+
+		public void LoadHowToPlay()
+		{
+			SceneManager.LoadScene("HowToPlay");
+		}
 	}
 }
