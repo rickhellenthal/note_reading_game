@@ -3346,6 +3346,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1635336659160212, guid: 2330504c075b2f54faf28b3d4ef16586,
     type: 2}
   m_PrefabInternal: {fileID: 1964833903}
+--- !u!114 &1713281674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713281673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f74ec9b550246a4c86c9f52e1b471ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameController: {fileID: 1114493417}
 --- !u!65 &1713281676
 BoxCollider:
   m_ObjectHideFlags: 0

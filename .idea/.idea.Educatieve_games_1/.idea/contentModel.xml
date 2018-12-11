@@ -12,6 +12,7 @@
             <e p="GameController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayNote.cs" t="Include" />
+            <e p="QuitButtonController.cs" t="Include" />
             <e p="SceneController.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
