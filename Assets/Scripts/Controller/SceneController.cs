@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using System;
+using Model;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,6 +12,24 @@ namespace Controller
 		[SerializeField] public Toggle IncludeSharpNotes;
 		[SerializeField] public Toggle IncludeFlatNotes;
 
+		public void StartRight()
+		{
+			CrossSceneInfo.ClefSetting = 0;
+			LoadGame(false);
+		}
+
+		public void StartLeft()
+		{
+			CrossSceneInfo.ClefSetting = 1;
+			LoadGame(false);
+		}
+
+		public void StartBoth()
+		{
+			CrossSceneInfo.ClefSetting = 2;
+			LoadGame(false);
+		}
+		
 		public void LoadGame(bool playAgain)
 		{
 			if (!playAgain)
